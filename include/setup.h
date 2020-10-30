@@ -25,21 +25,21 @@ const int XP=6,XM=56,YP=55,YM=7; //ID=0x9486
 // INA-219 address
 #define INA219_ADDR   0x40
 
+// Systema definitions
+#define SAMPLE_INTERVAL   200
+#define SHOW_INTERVAL     1000
+
 struct electric_monitor {
-  uint64_t count;
+  uint32_t count;
   float actual_voltage;
   float min_voltage;
   float max_voltage;
-  float avg_voltage_1min;
-  float avg_voltage_10min;
-  float avg_voltage_30min;
+  float avg_voltage;
   float sum_voltage;
   float actual_current;
   float min_current;
   float max_current;
-  float avg_current_1min;
-  float avg_current_10min;
-  float avg_current_30min;
+  float avg_current;
   float sum_current;
 };
 
@@ -48,5 +48,7 @@ Adafruit_INA219 ina219_sensor = Adafruit_INA219(INA219_ADDR);
 MCUFRIEND_kbv tft;
 electric_monitor sensor_values;
 uint16_t tft_id = 0;
+uint64_t last_sample = 0;
+uint64_t last_show = 0;
 
 #endif
