@@ -1,6 +1,116 @@
+/**
+ * @mainpage
+ * The Power Monitor aims to monitor the energy consumption of IoT devices. It can get and present the following parameters:
+ * \li Actual voltage (in V);
+ * \li Average voltage (in V);
+ * \li Minimal voltage (in V);
+ * \li Maximum voltage (in V);
+ * \li Actual current (in mA);
+ * \li Average current (in mA);
+ * \li Minimal current (in mA);
+ * \li Maximum current (in mA);
+ *  
+ * This documentation details its firmware, that is based on: \n
+ * \li \subpage mega_2560_page - microcontroller.
+ * \li \subpage lcd_page - display.
+ * \li \subpage ina219_page - energy sensor.
+ * 
+ * <br><br>
+ * <b>AgroTechLab (<i>Laboratory for the Development of Technologies for Agrobusiness</i>)</b><br>
+ * <b>IFSC (<i>Instituto Federal de Santa Catarina</i>)</b><br>
+ * Rua Heitor Vila Lobos, 222 - São Francisco<br>
+ * Lages/SC - Brazil<br>
+ * CEP: 88.506-400
+ * 
+ */
+
+/**
+ * \page mega_2560_page Arduino MEGA 2560 
+ * The Arduino Mega 2560 is a microcontroller board based on the ATmega2560. It has 54 digital input/output pins 
+ * (of which 15 can be used as PWM outputs), 16 analog inputs, 4 UARTs (hardware serial ports), a 16 MHz crystal 
+ * oscillator, a USB connection, a power jack, an ICSP header, and a reset button. It contains everything needed to 
+ * support the microcontroller; simply connect it to a computer with a USB cable or power it with a AC-to-DC adapter 
+ * or battery to get started. The Mega 2560 board is compatible with most shields designed for the Uno and the former 
+ * boards Duemilanove or Diecimila.
+ * 
+ * Key features are listed below, hardware details can be found into [datasheet](../datasheets/mega2560.pdf):
+ * - Supply voltage (recommended): 7V ~ 12V;
+ * - Supply voltage (limits): 6V ~ 20V;
+ * - Operating voltage: 5V;
+ * - Microcontroller: ATmega2560;
+ * - Digital I/O pins: 54 (of which 15 provide PWM output);
+ * - Analog input pins: 16;
+ * - DC Current per I/O Pin: 20 mA;
+ * - DC Current for 3.3V Pin: 50 mA;
+ * - Flash memory: 256Kb (8Kb used by bootloader);
+ * - SRAM: 8Kb;
+ * - EEPROM: 4Kb;
+ * - CPU clock: 16MHz;
+ * 
+ * ![MEGA2560 schematic connection](../figs/mega2560.jpg)<br>
+ * ![MEGA2560 schematic connection](../figs/mega2560_pinout.png)
+ */
+
+/**
+ * \page lcd_page 3,5" TFT LCD
+ * The 3,5"TFT LCD shield is a display with 262.000 colours, 480x320 pixels of resolution and touchscreen.
+ * 
+ * Key features are listed below:
+ * - Supply voltage 3.3V ~ 5V;
+ * - 480x320 resolution;
+ * - 262.000 colours;
+ * - TFT LCD (<i>Thin Film Transistor Liquid Crystal Display</i>);
+ * - Resistive touchscreen;
+ * - LED backlight;
+ * - With SD card slot;
+ * - Arduino and STM32 compatible;
+ * 
+ * ![LCD schematic connection](../figs/lcd1.jpg)
+ * ![LCD schematic connection](../figs/lcd2.jpg)
+ */
+
+/**
+ * \page ina219_page INA-219
+ * The INA219 is a current shunt and power monitor with an I2C- or SMBUS-compatible interface. The device monitors
+ * both shunt voltage drop and bus supply voltage, with programmable conversion times and filtering. A programmable 
+ * calibration value, combined with an internal multiplier, enables direct readouts of current in amperes. An additional
+ * multiplying register calculates power in watts. The I2C- or SMBUS-compatible interface features 16 programmable addresses. 
+ *  
+ * Key features are listed below, hardware details can be found into [datasheet](../datasheets/ina219.pdf):
+ * - Supply voltage 3V ~ 5.5V;
+ * - Operating temperature range -40ºC to 125ºC;
+ * - Senses Bus Voltages from 0 to 26 V;
+ * - 12 bits resolution;
+ * - Reports Current, Voltage, and Power;
+ * - 16 Programmable Addresses;
+ * - Filtering Options;
+ * - Calibration Registers;
+ * 
+ * ![INA219 schematic connection](../figs/ina219.jpg)
+ */ 
+
+/** 
+ * @file main.cpp
+ * @author Robson Costa (robson.costa@ifsc.edu.br)
+ * @brief Project main file.
+ * @version 1.2.0
+ * @since 2020-10-30 
+ * @date 2020-11-04
+ * 
+ * @copyright Copyright (c) 2020 - AgroTechLab. \n
+ * Licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Unported License (the <em>"License"</em>). You may not
+ * use this file except in compliance with the License. You may obtain a copy of the License <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode" target="_blank">here</a>.
+ * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an <em>"as is" basis, 
+ * without warranties or  conditions of any kind</em>, either express or implied. See the License for the specific language governing permissions 
+ * and limitations under the License.
+ */
 #include <Arduino.h>
 #include "setup.h"
 
+/**
+ * @fn setup
+ * @brief Configure all parameters before call loop function.
+ */
 void setup() {
   // Initialize sensor values
   sensor_values.count = 0;
@@ -36,6 +146,7 @@ void setup() {
   tft.println("(version 1.2.0)");
   tft.setCursor(318,310);
   tft.println("by AgroTechLab (IFSC/Lages)");
+  tft.setTextColor(YELLOW);
   tft.setCursor(20,15);
   tft.println("Sampling Interval");
   tft.setCursor(55,25);
@@ -49,7 +160,7 @@ void setup() {
   tft.setCursor(430,25);
   tft.println("ms");
 
-  
+  tft.setTextColor(WHITE);
   tft.setTextSize(2);    
   tft.setCursor(15, 60);
   tft.println("Sampled count..............:");
@@ -98,6 +209,10 @@ void setup() {
   tft.println(sensor_values.max_current);
 }
 
+/**
+ * @fn loop
+ * @brief Loop function executed cyclically.
+ */
 void loop() {
   // Check if its time to sample
   if ((millis() - last_sample) >= SAMPLE_INTERVAL) {

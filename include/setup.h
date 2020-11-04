@@ -1,3 +1,18 @@
+/**
+ * @file setup.h
+ * @author Robson Costa (robson.costa@ifsc.edu.br)
+ * @brief System setup parameters library.
+ * @version 1.2.0
+ * @since 2020-10-30 
+ * @date 2020-11-04
+ * 
+ * @copyright Copyright (c) 2020 - AgroTechLab. \n
+ * Licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Unported License (the <em>"License"</em>). You may not
+ * use this file except in compliance with the License. You may obtain a copy of the License <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode" target="_blank">here</a>.
+ * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an <em>"as is" basis, 
+ * without warranties or  conditions of any kind</em>, either express or implied. See the License for the specific language governing permissions 
+ * and limitations under the License.
+ */
 #ifndef __SETUP_H__
 #define __SETUP_H__
 
@@ -7,48 +22,109 @@
 #include "Adafruit_GFX.h"
 #include "TouchScreen.h"
 
-// Colors definition
+/**
+ * \def BLACK 
+ * TFT black color.
+ */
 #define BLACK   0x0000
+
+/**
+ * \def BLUE 
+ * TFT blue color.
+ */
 #define BLUE    0x001F
+
+/**
+ * \def RED 
+ * TFT red color.
+ */
 #define RED     0xF800
+
+/**
+ * \def GREEN 
+ * TFT green color.
+ */
 #define GREEN   0x07E0
+
+/**
+ * \def CYAN 
+ * TFT cyan color.
+ */
 #define CYAN    0x07FF
+
+/**
+ * \def MAGENTA 
+ * TFT magenta color.
+ */
 #define MAGENTA 0xF81F
+
+/**
+ * \def YELLOW 
+ * TFT yellow color.
+ */
 #define YELLOW  0xFFE0
+
+/**
+ * \def WHITE 
+ * TFT white color.
+ */
 #define WHITE   0xFFFF
 
-// TFT definitions
+/**
+ * \def MINPRESSURE 
+ * TFT minimal pressure.
+ */
 #define MINPRESSURE 200
+
+/**
+ * \def MAXPRESSURE 
+ * TFT maximum pressure.
+ */
 #define MAXPRESSURE 1000
 const int XP=6,XM=56,YP=55,YM=7; //ID=0x9486
 
-// INA-219 address
+/**
+ * \def INA219_ADDR 
+ * INA-219 I2C address.
+ */
 #define INA219_ADDR   0x40
 
-// Systema definitions
-#define SAMPLE_INTERVAL   200
-#define SHOW_INTERVAL     1000
+/**
+ * \def SAMPLE_INTERVAL 
+ * INA-219 sampling interval (in ms).
+ */
+#define SAMPLE_INTERVAL   50
 
-struct electric_monitor {
-  uint32_t count;
-  float actual_voltage;
-  float min_voltage;
-  float max_voltage;
-  float avg_voltage;
-  float sum_voltage;
-  float actual_current;
-  float min_current;
-  float max_current;
-  float avg_current;
-  float sum_current;
+/**
+ * \def SHOW_INTERVAL 
+ * LCD showing interval (in ms).
+ */
+#define SHOW_INTERVAL     3000
+
+/**
+ * @struct power_monitor 
+ * @brief Struct used to store INA-219 sensor values.
+ */
+struct power_monitor_str {
+  uint32_t count;           /**< Sampling count. */
+  float actual_voltage;     /**< Sampled voltage (in V). */
+  float min_voltage;        /**< Minimum sampled voltage (in V). */
+  float max_voltage;        /**< Maximum sampled voltage (in V). */
+  float avg_voltage;        /**< Average sampled voltage (in V). */
+  float sum_voltage;        /**< Sum of all sampled voltage (in V). */
+  float actual_current;     /**< Sampled current (in mA). */
+  float min_current;        /**< Minimum sampled current (in mA). */
+  float max_current;        /**< Maximum sampled current (in mA). */
+  float avg_current;        /**< Average sampled current (in mA). */
+  float sum_current;        /**< Sum of all sampled current (in mA). */
 };
 
 // Global variables
-Adafruit_INA219 ina219_sensor = Adafruit_INA219(INA219_ADDR);
-MCUFRIEND_kbv tft;
-electric_monitor sensor_values;
-uint16_t tft_id = 0;
-uint64_t last_sample = 0;
-uint64_t last_show = 0;
+Adafruit_INA219 ina219_sensor = Adafruit_INA219(INA219_ADDR);   /**< INA219 object. */
+MCUFRIEND_kbv tft;                                              /**< LCD object. */
+power_monitor_str sensor_values;                                    /**< Sensor values struct. */
+uint16_t tft_id = 0;                                            /**< LCD identification. */
+uint64_t last_sample = 0;                                       /**< Last sample moment (in ms). */
+uint64_t last_show = 0;                                         /**< Last show moment (in ms). */
 
 #endif
