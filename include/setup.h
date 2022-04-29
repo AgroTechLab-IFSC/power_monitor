@@ -18,9 +18,9 @@
 
 #include <Wire.h>
 #include <Adafruit_INA219.h>
-#include "MCUFRIEND_kbv.h"
-#include "Adafruit_GFX.h"
-#include "TouchScreen.h"
+//#include "MCUFRIEND_kbv.h"
+//#include "Adafruit_GFX.h"
+//#include "TouchScreen.h"
 
 /**
  * \def BLACK 
@@ -121,7 +121,7 @@ struct power_monitor_str {
 
 // Global variables
 Adafruit_INA219 ina219_sensor = Adafruit_INA219(INA219_ADDR);   /**< INA219 object. */
-MCUFRIEND_kbv tft;                                              /**< LCD object. */
+//MCUFRIEND_kbv tft;                                              /**< LCD object. */
 power_monitor_str sensor_values;                                    /**< Sensor values struct. */
 uint16_t tft_id = 0;                                            /**< LCD identification. */
 uint64_t last_sample = 0;                                       /**< Last sample moment (in ms). */
