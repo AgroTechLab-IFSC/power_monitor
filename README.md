@@ -4,6 +4,7 @@
 
 The Power Monitor aims to monitor the energy consumption of IoT devices.  
 It provides the following information:
+
 * Actual voltage (in V);
 * Average voltage (in V);
 * Minimal voltage (in V);
