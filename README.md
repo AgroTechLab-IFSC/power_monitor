@@ -1,8 +1,8 @@
 # Power Monitor 
 
-## (1.2.0)
-
-The Power Monitor aims to monitor the energy consumption of IoT devices.  
+The Power Monitor aims to get data about the energy consumption of IoT devices.
+Actual, average, minimum and maximum values are sampled at each 50 ms.
+This values are updated at each 3 seconds on LCD interface.
 It provides the following information:
 
 * Actual voltage (in V);
@@ -14,9 +14,11 @@ It provides the following information:
 * Minimal current (in mA);
 * Maximum current (in mA);
 
+## Requirements
 
-The data on user interface are updated at each 3 seconds.  
-The average values are computed based on values sampled at each 50 ms.
+* Arduino MEGA 2560;
+* 3,5" TFT LCD shield;
+* INA219 shield;
 
 ---
 AgroTechLab (*Laboratório de Desenvolvimento de Tecnologias para o Agronegócio*)  
