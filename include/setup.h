@@ -4,9 +4,9 @@
  * @brief System setup parameters library.
  * @version 1.2.0
  * @since 2020-10-30 
- * @date 2020-11-04
+ * @date 2024-02-12
  * 
- * @copyright Copyright (c) 2020 - AgroTechLab. \n
+ * @copyright Copyright (c) since 2020 - AgroTechLab. \n
  * Licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Unported License (the <em>"License"</em>). You may not
  * use this file except in compliance with the License. You may obtain a copy of the License <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode" target="_blank">here</a>.
  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an <em>"as is" basis, 
@@ -18,9 +18,9 @@
 
 #include <Wire.h>
 #include <Adafruit_INA219.h>
-//#include "MCUFRIEND_kbv.h"
-//#include "Adafruit_GFX.h"
-//#include "TouchScreen.h"
+#include <MCUFRIEND_kbv.h>
+#include <Adafruit_GFX.h>
+#include <TouchScreen.h>
 
 /**
  * \def BLACK 
@@ -81,7 +81,32 @@
  * TFT maximum pressure.
  */
 #define MAXPRESSURE 1000
-const int XP=6,XM=56,YP=55,YM=7; //ID=0x9486
+
+/**
+ * \def XP
+ * Pinout of X+.
+ */
+#define XP 6
+
+/**
+ * \def XM
+ * Pinout of X-.
+ */
+#define XM 56
+
+/**
+ * \def YP
+ * Pinout of Y+.
+ */
+#define YP 55
+
+/**
+ * \def YM
+ * Pinout of Y-.
+ */
+#define YM 7
+
+//ID=0x9486
 
 /**
  * \def INA219_ADDR 
@@ -102,7 +127,6 @@ const int XP=6,XM=56,YP=55,YM=7; //ID=0x9486
 #define SHOW_INTERVAL     3000
 
 /**
- * @struct power_monitor 
  * @brief Struct used to store INA-219 sensor values.
  */
 struct power_monitor_str {
@@ -119,10 +143,10 @@ struct power_monitor_str {
   float sum_current;        /**< Sum of all sampled current (in mA). */
 };
 
-// Global variables
+/* Global variables */
 Adafruit_INA219 ina219_sensor = Adafruit_INA219(INA219_ADDR);   /**< INA219 object. */
-//MCUFRIEND_kbv tft;                                              /**< LCD object. */
-power_monitor_str sensor_values;                                    /**< Sensor values struct. */
+MCUFRIEND_kbv tft;                                              /**< LCD object. */
+power_monitor_str sensor_values;                                /**< Sensor values struct. */
 uint16_t tft_id = 0;                                            /**< LCD identification. */
 uint64_t last_sample = 0;                                       /**< Last sample moment (in ms). */
 uint64_t last_show = 0;                                         /**< Last show moment (in ms). */

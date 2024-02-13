@@ -1,6 +1,8 @@
 /**
  * @mainpage
- * The Power Monitor aims to monitor the energy consumption of IoT devices.<br>
+ * The Power Monitor aims to get data about the energy consumption of IoT devices.<br>
+ * Actual, average, minimum and maximum values are sampled at each 50 ms.<br>
+ * This values are updated at each 3 seconds on LCD interface.<br>
  * It provides the following information:
  * \li Actual voltage (in V);
  * \li Average voltage (in V);
@@ -11,20 +13,12 @@
  * \li Minimal current (in mA);
  * \li Maximum current (in mA);
  * 
- * The data on user interface are updated at each 3 seconds.<br>
- * The average values are computed based on values sampled at each 50 ms.<br><br>
- * This documentation details its firmware, that is based on: \n
- * \li \subpage mega_2560_page - microcontroller.
- * \li \subpage lcd_page - display.
- * \li \subpage ina219_page - energy sensor.
+ * ![PowerMonitor](../figs/powermonitor_display.jpg)<br>
  * 
- * <br><br>
- * <b>AgroTechLab (<i>Laboratório de Desenvolvimento de Tecnologias para o Agronegócio</i>)</b><br>
- * <b>IFSC (<i>Instituto Federal de Santa Catarina</i>) - Câmpus Lages</b><br>
- * Rua Heitor Vila Lobos, 225 - São Francisco<br>
- * Lages/SC - Brazil<br>
- * CEP: 88.506-400
- * 
+ * <br>The <b>hardware requirements</b> are:
+ * \li \subpage mega_2560_page - microcontroller;
+ * \li \subpage lcd_page - display;
+ * \li \subpage ina219_page - energy sensor;
  */
 
 /**
@@ -50,13 +44,13 @@
  * - EEPROM: 4Kb;
  * - CPU clock: 16MHz;
  * 
- * ![MEGA2560 schematic connection](../figs/mega2560.jpg)<br>
- * ![MEGA2560 schematic connection](../figs/mega2560_pinout.png)
+ * ![MEGA2560](../figs/mega2560.jpg)<br>
+ * ![MEGA2560 pinout](../figs/mega2560_pinout.png)
  */
 
 /**
- * \page lcd_page 3,5" TFT LCD
- * The 3,5"TFT LCD shield is a display with 262.000 colours, 480x320 pixels of resolution and touchscreen.
+ * \page lcd_page 3,5'' TFT LCD
+ * The 3,5'' TFT LCD shield is a display with 262.000 colours, 480x320 pixels of resolution and touchscreen.
  * 
  * Key features are listed below:
  * - Supply voltage 3.3V ~ 5V;
@@ -89,7 +83,7 @@
  * - Filtering Options;
  * - Calibration Registers;
  * 
- * ![INA219 schematic connection](../figs/ina219.jpg)
+ * ![INA219 pinout](../figs/ina219.jpg)
  */ 
 
 /** 
@@ -98,9 +92,9 @@
  * @brief Project main file.
  * @version 1.2.0
  * @since 2020-10-30 
- * @date 2020-11-04
+ * @date 2024-02-12
  * 
- * @copyright Copyright (c) 2020 - AgroTechLab. \n
+ * @copyright Copyright (c) since 2020 - AgroTechLab. \n
  * Licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Unported License (the <em>"License"</em>). You may not
  * use this file except in compliance with the License. You may obtain a copy of the License <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode" target="_blank">here</a>.
  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an <em>"as is" basis, 
@@ -116,7 +110,7 @@
  */
 void setup() {
   // Initialize sensor values
-  /* sensor_values.count = 0;
+  sensor_values.count = 0;
   sensor_values.actual_voltage = 0.0f;
   sensor_values.min_voltage = __FLT_MAX__;
   sensor_values.max_voltage = __FLT_MIN__;
@@ -209,7 +203,7 @@ void setup() {
   tft.setCursor(50, 280);
   tft.println("Max current (mA)........:");    
   tft.setCursor(360, 280);
-  tft.println(sensor_values.max_current); */
+  tft.println(sensor_values.max_current);
 }
 
 /**
@@ -219,7 +213,7 @@ void setup() {
 void loop() {
   // Check if its time to sample
   if ((millis() - last_sample) >= SAMPLE_INTERVAL) {
-   /*  last_sample = millis();
+    last_sample = millis();
     sensor_values.count++;
     sensor_values.actual_voltage = ina219_sensor.getBusVoltage_V();
     if (sensor_values.actual_voltage < sensor_values.min_voltage) {
@@ -238,12 +232,12 @@ void loop() {
       sensor_values.max_current = sensor_values.actual_current;
     }
     sensor_values.sum_current += sensor_values.actual_current;
-    sensor_values.avg_current = sensor_values.sum_current/sensor_values.count; */
+    sensor_values.avg_current = sensor_values.sum_current/sensor_values.count;
   }
 
   // Check if its time to show
   if ((millis() - last_show) >= SHOW_INTERVAL) {
-    /*last_show = millis();
+    last_show = millis();
     
     tft.fillRoundRect(355, 55, 90, 25, 5, BLACK);
     tft.setTextColor(WHITE);
@@ -282,6 +276,6 @@ void loop() {
     tft.fillRoundRect(355, 275, 70, 25, 5, BLACK);
     tft.setTextColor(RED);
     tft.setCursor(360, 280);
-    tft.println(sensor_values.max_current); */
+    tft.println(sensor_values.max_current);
   }
 }

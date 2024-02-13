@@ -1,11 +1,17 @@
-<map id="C:/AgroTechLab/Tools/power_monitor/src/main.cpp" name="C:/AgroTechLab/Tools/power_monitor/src/main.cpp">
-<area shape="rect" id="Node000001" title="Project main file." alt="" coords="5,5,194,48"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="15,96,91,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,50,70,84,65,82,85,47"/>
-<area shape="rect" id="Node000003" href="$setup_8h.html" title="System setup parameters library." alt="" coords="115,96,180,123"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="114,47,135,82,130,84,110,50"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="59,171,119,197"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="139,125,110,161,106,158,135,122"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="142,171,268,197"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="160,122,188,157,184,161,155,125"/>
+<map id="main.cpp" name="main.cpp">
+<area shape="rect" id="Node000001" title="Project main file." alt="" coords="219,5,294,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="172,80,248,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,34,228,69,223,66,246,31"/>
+<area shape="rect" id="Node000003" href="$setup_8h.html" title="System setup parameters library." alt="" coords="272,80,337,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="267,31,290,66,286,69,262,34"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,155,65,181"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="272,106,261,109,80,156,79,151,260,104,271,101"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="88,155,214,181"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="279,110,192,150,190,145,276,105"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="237,155,372,181"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="307,107,307,140,302,140,302,107"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="396,155,504,181"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="331,105,412,145,410,150,328,110"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="528,155,636,181"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="337,100,520,148,518,153,336,106"/>
 </map>

@@ -14,7 +14,9 @@ It provides the following information:
 * Minimal current (in mA);
 * Maximum current (in mA);
 
-## Requirements
+![Power Monitor display](./docs/figs/powermonitor_display.jpg "Power Monitor display")
+
+## Hardware Requirements
 
 * Arduino MEGA 2560;
 * 3,5" TFT LCD shield;
