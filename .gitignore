@@ -48,3 +48,10 @@ Thumbs.db
 *.mov
 *.wmv
 
+# VSCode files
+.vscode/
+
+# PlatformIO files
+.pio/
+
+# Power Monitor files
