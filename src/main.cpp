@@ -13,7 +13,7 @@
  * \li Minimal current (in mA);
  * \li Maximum current (in mA);
  * 
- * ![PowerMonitor](../figs/powermonitor_display.jpg)<br>
+ * ![PowerMonitor](powermonitor_display.jpg)<br>
  * 
  * <br>The <b>hardware requirements</b> are:
  * \li \subpage mega_2560_page - microcontroller;
