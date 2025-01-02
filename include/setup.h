@@ -2,7 +2,7 @@
  * @file setup.h
  * @author Robson Costa (robson.costa@ifsc.edu.br)
  * @brief System setup parameters library.
- * @version 1.2.0
+ * @version 1.3.0
  * @since 30/10/2020 
  * @date 02/01/2025
  * 

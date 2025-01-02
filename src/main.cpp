@@ -30,7 +30,7 @@
  * or battery to get started. The Mega 2560 board is compatible with most shields designed for the Uno and the former 
  * boards Duemilanove or Diecimila.
  * 
- * Key features are listed below, hardware details can be found into [datasheet](../datasheets/mega2560.pdf):
+ * Key features are listed below, hardware details can be found into [datasheet](mega2560.pdf):
  * - Supply voltage (recommended): 7V ~ 12V;
  * - Supply voltage (limits): 6V ~ 20V;
  * - Operating voltage: 5V;
@@ -44,8 +44,8 @@
  * - EEPROM: 4Kb;
  * - CPU clock: 16MHz;
  * 
- * ![MEGA2560](../figs/mega2560.jpg)<br>
- * ![MEGA2560 pinout](../figs/mega2560_pinout.png)
+ * ![MEGA2560](mega2560.jpg)<br>
+ * ![MEGA2560 pinout](mega2560_pinout.png)
  */
 
 /**
@@ -62,8 +62,8 @@
  * - With SD card slot;
  * - Arduino and STM32 compatible;
  * 
- * ![LCD schematic connection](../figs/lcd1.jpg)
- * ![LCD schematic connection](../figs/lcd2.jpg)
+ * ![LCD schematic connection](lcd1.jpg)
+ * ![LCD schematic connection](lcd2.jpg)
  */
 
 /**
@@ -73,7 +73,7 @@
  * calibration value, combined with an internal multiplier, enables direct readouts of current in amperes. An additional
  * multiplying register calculates power in watts. The I2C- or SMBUS-compatible interface features 16 programmable addresses. 
  *  
- * Key features are listed below, hardware details can be found into [datasheet](../datasheets/ina219.pdf):
+ * Key features are listed below, hardware details can be found into [datasheet](ina219.pdf):
  * - Supply voltage 3V ~ 5.5V;
  * - Operating temperature range -40ºC to 125ºC;
  * - Senses Bus Voltages from 0 to 26 V;
@@ -83,7 +83,7 @@
  * - Filtering Options;
  * - Calibration Registers;
  * 
- * ![INA219 pinout](../figs/ina219.jpg)
+ * ![INA219 pinout](ina219.jpg)
  */ 
 
 /** 
