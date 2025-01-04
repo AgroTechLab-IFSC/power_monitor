@@ -1,0 +1,405 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Source Code Docs &mdash; Power Monitor 1.3.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=1f29e9d3"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Hardware Requirements" href="hw_req.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Power Monitor
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="authors_license.html">Authors and License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hw_req.html">Hardware Requirements</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Source Code Docs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv417power_monitor_str"><code class="docutils literal notranslate"><span class="pre">power_monitor_str</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N17power_monitor_str5countE"><code class="docutils literal notranslate"><span class="pre">power_monitor_str::count</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N17power_monitor_str14actual_voltageE"><code class="docutils literal notranslate"><span class="pre">power_monitor_str::actual_voltage</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N17power_monitor_str11min_voltageE"><code class="docutils literal notranslate"><span class="pre">power_monitor_str::min_voltage</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N17power_monitor_str11max_voltageE"><code class="docutils literal notranslate"><span class="pre">power_monitor_str::max_voltage</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N17power_monitor_str11avg_voltageE"><code class="docutils literal notranslate"><span class="pre">power_monitor_str::avg_voltage</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N17power_monitor_str11sum_voltageE"><code class="docutils literal notranslate"><span class="pre">power_monitor_str::sum_voltage</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N17power_monitor_str14actual_currentE"><code class="docutils literal notranslate"><span class="pre">power_monitor_str::actual_current</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N17power_monitor_str11min_currentE"><code class="docutils literal notranslate"><span class="pre">power_monitor_str::min_current</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N17power_monitor_str11max_currentE"><code class="docutils literal notranslate"><span class="pre">power_monitor_str::max_current</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N17power_monitor_str11avg_currentE"><code class="docutils literal notranslate"><span class="pre">power_monitor_str::avg_current</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N17power_monitor_str11sum_currentE"><code class="docutils literal notranslate"><span class="pre">power_monitor_str::sum_current</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv413ina219_sensor"><code class="docutils literal notranslate"><span class="pre">ina219_sensor</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv43tft"><code class="docutils literal notranslate"><span class="pre">tft</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv413sensor_values"><code class="docutils literal notranslate"><span class="pre">sensor_values</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv46tft_id"><code class="docutils literal notranslate"><span class="pre">tft_id</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv411last_sample"><code class="docutils literal notranslate"><span class="pre">last_sample</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv49last_show"><code class="docutils literal notranslate"><span class="pre">last_show</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv45setupv"><code class="docutils literal notranslate"><span class="pre">setup()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv44loopv"><code class="docutils literal notranslate"><span class="pre">loop()</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Power Monitor</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Source Code Docs</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/source_code_docs.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="source-code-docs">
+<h1>Source Code Docs<a class="headerlink" href="#source-code-docs" title="Link to this heading"></a></h1>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv417power_monitor_str">
+<span id="_CPPv317power_monitor_str"></span><span id="_CPPv217power_monitor_str"></span><span id="power_monitor_str"></span><span class="target" id="structpower__monitor__str"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">power_monitor_str</span></span></span><a class="headerlink" href="#_CPPv417power_monitor_str" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="#setup_8h"><span class="std std-ref">setup.h</span></a>&gt;</em></div>
+<p>Struct used to store INA-219 sensor values. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N17power_monitor_str5countE">
+<span id="_CPPv3N17power_monitor_str5countE"></span><span id="_CPPv2N17power_monitor_str5countE"></span><span id="power_monitor_str::count__uint32_t"></span><span class="target" id="structpower__monitor__str_1a86988a65e0d3ece7990c032c159786d6"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">count</span></span></span><a class="headerlink" href="#_CPPv4N17power_monitor_str5countE" title="Link to this definition"></a><br /></dt>
+<dd><p>Sampling count. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N17power_monitor_str14actual_voltageE">
+<span id="_CPPv3N17power_monitor_str14actual_voltageE"></span><span id="_CPPv2N17power_monitor_str14actual_voltageE"></span><span id="power_monitor_str::actual_voltage__float"></span><span class="target" id="structpower__monitor__str_1a9adeef36f57c06a47ffd8c41372d5a29"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">actual_voltage</span></span></span><a class="headerlink" href="#_CPPv4N17power_monitor_str14actual_voltageE" title="Link to this definition"></a><br /></dt>
+<dd><p>Sampled voltage (in V). </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N17power_monitor_str11min_voltageE">
+<span id="_CPPv3N17power_monitor_str11min_voltageE"></span><span id="_CPPv2N17power_monitor_str11min_voltageE"></span><span id="power_monitor_str::min_voltage__float"></span><span class="target" id="structpower__monitor__str_1abf4f6be248cd12be76191bb654a11cde"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">min_voltage</span></span></span><a class="headerlink" href="#_CPPv4N17power_monitor_str11min_voltageE" title="Link to this definition"></a><br /></dt>
+<dd><p>Minimum sampled voltage (in V). </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N17power_monitor_str11max_voltageE">
+<span id="_CPPv3N17power_monitor_str11max_voltageE"></span><span id="_CPPv2N17power_monitor_str11max_voltageE"></span><span id="power_monitor_str::max_voltage__float"></span><span class="target" id="structpower__monitor__str_1a2dd9f57e9547ddd9a6ee5ddd1b56fcd5"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_voltage</span></span></span><a class="headerlink" href="#_CPPv4N17power_monitor_str11max_voltageE" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum sampled voltage (in V). </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N17power_monitor_str11avg_voltageE">
+<span id="_CPPv3N17power_monitor_str11avg_voltageE"></span><span id="_CPPv2N17power_monitor_str11avg_voltageE"></span><span id="power_monitor_str::avg_voltage__float"></span><span class="target" id="structpower__monitor__str_1a8ebcae4ef366430a1016ea6d278cac9d"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">avg_voltage</span></span></span><a class="headerlink" href="#_CPPv4N17power_monitor_str11avg_voltageE" title="Link to this definition"></a><br /></dt>
+<dd><p>Average sampled voltage (in V). </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N17power_monitor_str11sum_voltageE">
+<span id="_CPPv3N17power_monitor_str11sum_voltageE"></span><span id="_CPPv2N17power_monitor_str11sum_voltageE"></span><span id="power_monitor_str::sum_voltage__float"></span><span class="target" id="structpower__monitor__str_1a73e165aaf2f12120a692f63c41aa52b4"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sum_voltage</span></span></span><a class="headerlink" href="#_CPPv4N17power_monitor_str11sum_voltageE" title="Link to this definition"></a><br /></dt>
+<dd><p>Sum of all sampled voltage (in V). </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N17power_monitor_str14actual_currentE">
+<span id="_CPPv3N17power_monitor_str14actual_currentE"></span><span id="_CPPv2N17power_monitor_str14actual_currentE"></span><span id="power_monitor_str::actual_current__float"></span><span class="target" id="structpower__monitor__str_1a2c13815f2823de3fbcacc5d32bb361b7"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">actual_current</span></span></span><a class="headerlink" href="#_CPPv4N17power_monitor_str14actual_currentE" title="Link to this definition"></a><br /></dt>
+<dd><p>Sampled current (in mA). </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N17power_monitor_str11min_currentE">
+<span id="_CPPv3N17power_monitor_str11min_currentE"></span><span id="_CPPv2N17power_monitor_str11min_currentE"></span><span id="power_monitor_str::min_current__float"></span><span class="target" id="structpower__monitor__str_1ac6a693975aff43a81a829da5aa86a9cc"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">min_current</span></span></span><a class="headerlink" href="#_CPPv4N17power_monitor_str11min_currentE" title="Link to this definition"></a><br /></dt>
+<dd><p>Minimum sampled current (in mA). </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N17power_monitor_str11max_currentE">
+<span id="_CPPv3N17power_monitor_str11max_currentE"></span><span id="_CPPv2N17power_monitor_str11max_currentE"></span><span id="power_monitor_str::max_current__float"></span><span class="target" id="structpower__monitor__str_1a854929d3dff33ea3ada6aa5ffa70dfa4"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_current</span></span></span><a class="headerlink" href="#_CPPv4N17power_monitor_str11max_currentE" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum sampled current (in mA). </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N17power_monitor_str11avg_currentE">
+<span id="_CPPv3N17power_monitor_str11avg_currentE"></span><span id="_CPPv2N17power_monitor_str11avg_currentE"></span><span id="power_monitor_str::avg_current__float"></span><span class="target" id="structpower__monitor__str_1a445b32ad3b5e75056184e465c7e12d12"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">avg_current</span></span></span><a class="headerlink" href="#_CPPv4N17power_monitor_str11avg_currentE" title="Link to this definition"></a><br /></dt>
+<dd><p>Average sampled current (in mA). </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N17power_monitor_str11sum_currentE">
+<span id="_CPPv3N17power_monitor_str11sum_currentE"></span><span id="_CPPv2N17power_monitor_str11sum_currentE"></span><span id="power_monitor_str::sum_current__float"></span><span class="target" id="structpower__monitor__str_1aeab80d88e7454ca28f79bb503f8ab027"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sum_current</span></span></span><a class="headerlink" href="#_CPPv4N17power_monitor_str11sum_currentE" title="Link to this definition"></a><br /></dt>
+<dd><p>Sum of all sampled current (in mA). </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="setup_8h"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">setup.h</span></span></dt>
+<dd><div class="docutils container">
+<em>#include &lt;Wire.h&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;Adafruit_INA219.h&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;MCUFRIEND_kbv.h&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;Adafruit_GFX.h&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;TouchScreen.h&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-defines">Defines</p>
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.BLACK">
+<span class="target" id="setup_8h_1a7b3b25cba33b07c303f3060fe41887f6"></span><span class="sig-name descname"><span class="n"><span class="pre">BLACK</span></span></span><a class="headerlink" href="#c.BLACK" title="Link to this definition"></a><br /></dt>
+<dd><p>TFT black color. </p>
+</dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.BLUE">
+<span class="target" id="setup_8h_1a79d10e672abb49ad63eeaa8aaef57c38"></span><span class="sig-name descname"><span class="n"><span class="pre">BLUE</span></span></span><a class="headerlink" href="#c.BLUE" title="Link to this definition"></a><br /></dt>
+<dd><p>TFT blue color. </p>
+</dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.RED">
+<span class="target" id="setup_8h_1a8d23feea868a983c8c2b661e1e16972f"></span><span class="sig-name descname"><span class="n"><span class="pre">RED</span></span></span><a class="headerlink" href="#c.RED" title="Link to this definition"></a><br /></dt>
+<dd><p>TFT red color. </p>
+</dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.GREEN">
+<span class="target" id="setup_8h_1acfbc006ea433ad708fdee3e82996e721"></span><span class="sig-name descname"><span class="n"><span class="pre">GREEN</span></span></span><a class="headerlink" href="#c.GREEN" title="Link to this definition"></a><br /></dt>
+<dd><p>TFT green color. </p>
+</dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.CYAN">
+<span class="target" id="setup_8h_1ad243f93c16bc4c1d3e0a13b84421d760"></span><span class="sig-name descname"><span class="n"><span class="pre">CYAN</span></span></span><a class="headerlink" href="#c.CYAN" title="Link to this definition"></a><br /></dt>
+<dd><p>TFT cyan color. </p>
+</dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.MAGENTA">
+<span class="target" id="setup_8h_1a6f699060902f800f12aaae150f3a708e"></span><span class="sig-name descname"><span class="n"><span class="pre">MAGENTA</span></span></span><a class="headerlink" href="#c.MAGENTA" title="Link to this definition"></a><br /></dt>
+<dd><p>TFT magenta color. </p>
+</dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.YELLOW">
+<span class="target" id="setup_8h_1abf681265909adf3d3e8116c93c0ba179"></span><span class="sig-name descname"><span class="n"><span class="pre">YELLOW</span></span></span><a class="headerlink" href="#c.YELLOW" title="Link to this definition"></a><br /></dt>
+<dd><p>TFT yellow color. </p>
+</dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.WHITE">
+<span class="target" id="setup_8h_1a87b537f5fa5c109d3c05c13d6b18f382"></span><span class="sig-name descname"><span class="n"><span class="pre">WHITE</span></span></span><a class="headerlink" href="#c.WHITE" title="Link to this definition"></a><br /></dt>
+<dd><p>TFT white color. </p>
+</dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.MINPRESSURE">
+<span class="target" id="setup_8h_1a42a8c4982cef9a6a4b0c4120e95f33da"></span><span class="sig-name descname"><span class="n"><span class="pre">MINPRESSURE</span></span></span><a class="headerlink" href="#c.MINPRESSURE" title="Link to this definition"></a><br /></dt>
+<dd><p>TFT minimal pressure. </p>
+</dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.MAXPRESSURE">
+<span class="target" id="setup_8h_1a4a6e2948ffa5d35d9d934d7b875abd4c"></span><span class="sig-name descname"><span class="n"><span class="pre">MAXPRESSURE</span></span></span><a class="headerlink" href="#c.MAXPRESSURE" title="Link to this definition"></a><br /></dt>
+<dd><p>TFT maximum pressure. </p>
+</dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.XP">
+<span class="target" id="setup_8h_1a328016c95889e9831b2606769b90a317"></span><span class="sig-name descname"><span class="n"><span class="pre">XP</span></span></span><a class="headerlink" href="#c.XP" title="Link to this definition"></a><br /></dt>
+<dd><p>Pinout of X+. </p>
+</dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.XM">
+<span class="target" id="setup_8h_1aba9214664551147170071ccde26b1366"></span><span class="sig-name descname"><span class="n"><span class="pre">XM</span></span></span><a class="headerlink" href="#c.XM" title="Link to this definition"></a><br /></dt>
+<dd><p>Pinout of X-. </p>
+</dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.YP">
+<span class="target" id="setup_8h_1ab7dd464b7c1c7ae1fe3b51487a226c80"></span><span class="sig-name descname"><span class="n"><span class="pre">YP</span></span></span><a class="headerlink" href="#c.YP" title="Link to this definition"></a><br /></dt>
+<dd><p>Pinout of Y+. </p>
+</dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.YM">
+<span class="target" id="setup_8h_1a517c4f2440d1d36aa90f125d4b7e12f5"></span><span class="sig-name descname"><span class="n"><span class="pre">YM</span></span></span><a class="headerlink" href="#c.YM" title="Link to this definition"></a><br /></dt>
+<dd><p>Pinout of Y-. </p>
+</dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.INA219_ADDR">
+<span class="target" id="setup_8h_1ac1339fa84c70a1e0606d8d3362c993ee"></span><span class="sig-name descname"><span class="n"><span class="pre">INA219_ADDR</span></span></span><a class="headerlink" href="#c.INA219_ADDR" title="Link to this definition"></a><br /></dt>
+<dd><p>INA-219 I2C address. </p>
+</dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.SAMPLE_INTERVAL">
+<span class="target" id="setup_8h_1a93f97e455a4335f7c2b6cff3716e2691"></span><span class="sig-name descname"><span class="n"><span class="pre">SAMPLE_INTERVAL</span></span></span><a class="headerlink" href="#c.SAMPLE_INTERVAL" title="Link to this definition"></a><br /></dt>
+<dd><p>INA-219 sampling interval (in ms). </p>
+</dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.SHOW_INTERVAL">
+<span class="target" id="setup_8h_1a969d1ca2eb94adccd6a1d087f1a6274f"></span><span class="sig-name descname"><span class="n"><span class="pre">SHOW_INTERVAL</span></span></span><a class="headerlink" href="#c.SHOW_INTERVAL" title="Link to this definition"></a><br /></dt>
+<dd><p>LCD showing interval (in ms). </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-variables">Variables</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv413ina219_sensor">
+<span id="_CPPv313ina219_sensor"></span><span id="_CPPv213ina219_sensor"></span><span id="ina219_sensor__Adafruit_INA219"></span><span class="target" id="setup_8h_1a7f2cca54a84385ee3fa3bb0d0f50f6c7"></span><span class="n"><span class="pre">Adafruit_INA219</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ina219_sensor</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">Adafruit_INA219</span></span><span class="p"><span class="pre">(</span></span><span class="n"><span class="pre">INA219_ADDR</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv413ina219_sensor" title="Link to this definition"></a><br /></dt>
+<dd><p>INA219 object. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv43tft">
+<span id="_CPPv33tft"></span><span id="_CPPv23tft"></span><span id="tft__MCUFRIEND_kbv"></span><span class="target" id="setup_8h_1acd58c67baa829259d4e811afcdf38fa5"></span><span class="n"><span class="pre">MCUFRIEND_kbv</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tft</span></span></span><a class="headerlink" href="#_CPPv43tft" title="Link to this definition"></a><br /></dt>
+<dd><p>LCD object. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv413sensor_values">
+<span id="_CPPv313sensor_values"></span><span id="_CPPv213sensor_values"></span><span id="sensor_values__power_monitor_str"></span><span class="target" id="setup_8h_1ad922b1d5df2224adfd042a0af89780af"></span><a class="reference internal" href="#_CPPv417power_monitor_str" title="power_monitor_str"><span class="n"><span class="pre">power_monitor_str</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sensor_values</span></span></span><a class="headerlink" href="#_CPPv413sensor_values" title="Link to this definition"></a><br /></dt>
+<dd><p>Sensor values struct. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv46tft_id">
+<span id="_CPPv36tft_id"></span><span id="_CPPv26tft_id"></span><span id="tft_id__uint16_t"></span><span class="target" id="setup_8h_1a27876c9767e96db03f00ba95e94f0e91"></span><span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tft_id</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv46tft_id" title="Link to this definition"></a><br /></dt>
+<dd><p>LCD identification. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv411last_sample">
+<span id="_CPPv311last_sample"></span><span id="_CPPv211last_sample"></span><span id="last_sample__uint64_t"></span><span class="target" id="setup_8h_1a2cbad8fe6116ab220360f22bd3229778"></span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">last_sample</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv411last_sample" title="Link to this definition"></a><br /></dt>
+<dd><p>Last sample moment (in ms). </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv49last_show">
+<span id="_CPPv39last_show"></span><span id="_CPPv29last_show"></span><span id="last_show__uint64_t"></span><span class="target" id="setup_8h_1ab404284d5b50b2cd3d360e68f48233c5"></span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">last_show</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv49last_show" title="Link to this definition"></a><br /></dt>
+<dd><p>Last show moment (in ms). </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="main_8cpp"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">main.cpp</span></span></dt>
+<dd><div class="docutils container">
+<em>#include &lt;Arduino.h&gt;</em></div>
+<div class="docutils container">
+<em>#include “<a class="reference internal" href="#setup_8h"><span class="std std-ref">setup.h</span></a>”</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv45setupv">
+<span id="_CPPv35setupv"></span><span id="_CPPv25setupv"></span><span id="setup"></span><span class="target" id="main_8cpp_1a1d04139db3a5ad5713ecbd14d97da879"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setup</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv45setupv" title="Link to this definition"></a><br /></dt>
+<dd><p>Configure all parameters before call loop function. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv44loopv">
+<span id="_CPPv34loopv"></span><span id="_CPPv24loopv"></span><span id="loop"></span><span class="target" id="main_8cpp_1a11debc633c690ca19cb27df5f971d73d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">loop</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv44loopv" title="Link to this definition"></a><br /></dt>
+<dd><p>Loop function executed cyclically. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="dir_d44c64559bbebec7f509842c48db8b23"></span><em><span class="pre">dir</span></em> <span class="sig-name descname"><span class="pre">include</span></span></dt>
+<dd></dd></dl>
+
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="dir_68267d1309a1af8e8297ef4c3efbcdba"></span><em><span class="pre">dir</span></em> <span class="sig-name descname"><span class="pre">src</span></span></dt>
+<dd></dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="hw_req.html" class="btn btn-neutral float-left" title="Hardware Requirements" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright since 2020 - AgroTechLab.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

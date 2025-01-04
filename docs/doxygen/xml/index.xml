@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.7" xml:lang="en-US">
+  <compound refid="structpower__monitor__str" kind="struct"><name>power_monitor_str</name>
+    <member refid="structpower__monitor__str_1a86988a65e0d3ece7990c032c159786d6" kind="variable"><name>count</name></member>
+    <member refid="structpower__monitor__str_1a9adeef36f57c06a47ffd8c41372d5a29" kind="variable"><name>actual_voltage</name></member>
+    <member refid="structpower__monitor__str_1abf4f6be248cd12be76191bb654a11cde" kind="variable"><name>min_voltage</name></member>
+    <member refid="structpower__monitor__str_1a2dd9f57e9547ddd9a6ee5ddd1b56fcd5" kind="variable"><name>max_voltage</name></member>
+    <member refid="structpower__monitor__str_1a8ebcae4ef366430a1016ea6d278cac9d" kind="variable"><name>avg_voltage</name></member>
+    <member refid="structpower__monitor__str_1a73e165aaf2f12120a692f63c41aa52b4" kind="variable"><name>sum_voltage</name></member>
+    <member refid="structpower__monitor__str_1a2c13815f2823de3fbcacc5d32bb361b7" kind="variable"><name>actual_current</name></member>
+    <member refid="structpower__monitor__str_1ac6a693975aff43a81a829da5aa86a9cc" kind="variable"><name>min_current</name></member>
+    <member refid="structpower__monitor__str_1a854929d3dff33ea3ada6aa5ffa70dfa4" kind="variable"><name>max_current</name></member>
+    <member refid="structpower__monitor__str_1a445b32ad3b5e75056184e465c7e12d12" kind="variable"><name>avg_current</name></member>
+    <member refid="structpower__monitor__str_1aeab80d88e7454ca28f79bb503f8ab027" kind="variable"><name>sum_current</name></member>
+  </compound>
+  <compound refid="setup_8h" kind="file"><name>setup.h</name>
+    <member refid="setup_8h_1a7b3b25cba33b07c303f3060fe41887f6" kind="define"><name>BLACK</name></member>
+    <member refid="setup_8h_1a79d10e672abb49ad63eeaa8aaef57c38" kind="define"><name>BLUE</name></member>
+    <member refid="setup_8h_1a8d23feea868a983c8c2b661e1e16972f" kind="define"><name>RED</name></member>
+    <member refid="setup_8h_1acfbc006ea433ad708fdee3e82996e721" kind="define"><name>GREEN</name></member>
+    <member refid="setup_8h_1ad243f93c16bc4c1d3e0a13b84421d760" kind="define"><name>CYAN</name></member>
+    <member refid="setup_8h_1a6f699060902f800f12aaae150f3a708e" kind="define"><name>MAGENTA</name></member>
+    <member refid="setup_8h_1abf681265909adf3d3e8116c93c0ba179" kind="define"><name>YELLOW</name></member>
+    <member refid="setup_8h_1a87b537f5fa5c109d3c05c13d6b18f382" kind="define"><name>WHITE</name></member>
+    <member refid="setup_8h_1a42a8c4982cef9a6a4b0c4120e95f33da" kind="define"><name>MINPRESSURE</name></member>
+    <member refid="setup_8h_1a4a6e2948ffa5d35d9d934d7b875abd4c" kind="define"><name>MAXPRESSURE</name></member>
+    <member refid="setup_8h_1a328016c95889e9831b2606769b90a317" kind="define"><name>XP</name></member>
+    <member refid="setup_8h_1aba9214664551147170071ccde26b1366" kind="define"><name>XM</name></member>
+    <member refid="setup_8h_1ab7dd464b7c1c7ae1fe3b51487a226c80" kind="define"><name>YP</name></member>
+    <member refid="setup_8h_1a517c4f2440d1d36aa90f125d4b7e12f5" kind="define"><name>YM</name></member>
+    <member refid="setup_8h_1ac1339fa84c70a1e0606d8d3362c993ee" kind="define"><name>INA219_ADDR</name></member>
+    <member refid="setup_8h_1a93f97e455a4335f7c2b6cff3716e2691" kind="define"><name>SAMPLE_INTERVAL</name></member>
+    <member refid="setup_8h_1a969d1ca2eb94adccd6a1d087f1a6274f" kind="define"><name>SHOW_INTERVAL</name></member>
+    <member refid="setup_8h_1a7f2cca54a84385ee3fa3bb0d0f50f6c7" kind="variable"><name>ina219_sensor</name></member>
+    <member refid="setup_8h_1acd58c67baa829259d4e811afcdf38fa5" kind="variable"><name>tft</name></member>
+    <member refid="setup_8h_1ad922b1d5df2224adfd042a0af89780af" kind="variable"><name>sensor_values</name></member>
+    <member refid="setup_8h_1a27876c9767e96db03f00ba95e94f0e91" kind="variable"><name>tft_id</name></member>
+    <member refid="setup_8h_1a2cbad8fe6116ab220360f22bd3229778" kind="variable"><name>last_sample</name></member>
+    <member refid="setup_8h_1ab404284d5b50b2cd3d360e68f48233c5" kind="variable"><name>last_show</name></member>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a1d04139db3a5ad5713ecbd14d97da879" kind="function"><name>setup</name></member>
+    <member refid="main_8cpp_1a11debc633c690ca19cb27df5f971d73d" kind="function"><name>loop</name></member>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

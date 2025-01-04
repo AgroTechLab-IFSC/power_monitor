@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Power Monitor</title>
+    <innerpage refid="mega_2560_page">Arduino MEGA 2560</innerpage>
+    <innerpage refid="lcd_page">3,5&apos;&apos; TFT LCD</innerpage>
+    <innerpage refid="ina219_page">INA-219</innerpage>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The Power Monitor aims to get data about the energy consumption of IoT devices.<linebreak/>
+ Actual, average, minimum and maximum values are sampled at each 50 ms.<linebreak/>
+ This values are updated at each 3 seconds on LCD interface.<linebreak/>
+ It provides the following information: <itemizedlist>
+<listitem><para>Actual voltage (in V); </para>
+</listitem>
+<listitem><para>Average voltage (in V); </para>
+</listitem>
+<listitem><para>Minimal voltage (in V); </para>
+</listitem>
+<listitem><para>Maximum voltage (in V); </para>
+</listitem>
+<listitem><para>Actual current (in mA); </para>
+</listitem>
+<listitem><para>Average current (in mA); </para>
+</listitem>
+<listitem><para>Minimal current (in mA); </para>
+</listitem>
+<listitem><para>Maximum current (in mA);</para>
+</listitem>
+</itemizedlist>
+<image type="html" name="powermonitor_display.jpg" inline="yes">PowerMonitor</image>
+ <image type="latex" name="powermonitor_display.jpg" inline="yes">PowerMonitor</image>
+ <image type="rtf" name="powermonitor_display.jpg" inline="yes">PowerMonitor</image>
+ <image type="docbook" name="powermonitor_display.jpg" inline="yes">PowerMonitor</image>
+ <image type="xml" name="powermonitor_display.jpg" inline="yes">PowerMonitor</image>
+ <linebreak/>
+</para>
+<para><linebreak/>
+The <bold>hardware requirements</bold> are: <itemizedlist>
+<listitem><para><ref refid="mega_2560_page" kindref="compound">Arduino MEGA 2560</ref> - microcontroller; </para>
+</listitem>
+<listitem><para><ref refid="lcd_page" kindref="compound">3,5&apos;&apos; TFT LCD</ref> - display; </para>
+</listitem>
+<listitem><para><ref refid="ina219_page" kindref="compound">INA-219</ref> - energy sensor; </para>
+</listitem>
+</itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="C:/AgroTechLab/Tools/power_monitor/src/main.cpp"/>
+  </compounddef>
+</doxygen>

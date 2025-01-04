@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="ina219_page" kind="page">
+    <compoundname>ina219_page</compoundname>
+    <title>INA-219</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The INA219 is a current shunt and power monitor with an I2C- or SMBUS-compatible interface. The device monitors both shunt voltage drop and bus supply voltage, with programmable conversion times and filtering. A programmable calibration value, combined with an internal multiplier, enables direct readouts of current in amperes. An additional multiplying register calculates power in watts. The I2C- or SMBUS-compatible interface features 16 programmable addresses.</para>
+<para>Key features are listed below, hardware details can be found into <ulink url="ina219.pdf">datasheet</ulink>:<itemizedlist>
+<listitem><para>Supply voltage 3V ~ 5.5V;</para>
+</listitem><listitem><para>Operating temperature range -40ºC to 125ºC;</para>
+</listitem><listitem><para>Senses Bus Voltages from 0 to 26 V;</para>
+</listitem><listitem><para>12 bits resolution;</para>
+</listitem><listitem><para>Reports Current, Voltage, and Power;</para>
+</listitem><listitem><para>16 Programmable Addresses;</para>
+</listitem><listitem><para>Filtering Options;</para>
+</listitem><listitem><para>Calibration Registers;</para>
+</listitem></itemizedlist>
+</para>
+<para><image type="html" name="ina219.jpg">INA219 pinout</image>
+ <image type="latex" name="ina219.jpg">INA219 pinout</image>
+ <image type="rtf" name="ina219.jpg">INA219 pinout</image>
+ <image type="docbook" name="ina219.jpg">INA219 pinout</image>
+ <image type="xml" name="ina219.jpg">INA219 pinout</image>
+ </para>
+    </detaileddescription>
+    <location file="C:/AgroTechLab/Tools/power_monitor/src/main.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,414 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="setup_8h" kind="file" language="C++">
+    <compoundname>setup.h</compoundname>
+    <includes local="no">Wire.h</includes>
+    <includes local="no">Adafruit_INA219.h</includes>
+    <includes local="no">MCUFRIEND_kbv.h</includes>
+    <includes local="no">Adafruit_GFX.h</includes>
+    <includes local="no">TouchScreen.h</includes>
+    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>Adafruit_GFX.h</label>
+      </node>
+      <node id="3">
+        <label>Adafruit_INA219.h</label>
+      </node>
+      <node id="1">
+        <label>setup.h</label>
+        <link refid="setup_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>MCUFRIEND_kbv.h</label>
+      </node>
+      <node id="6">
+        <label>TouchScreen.h</label>
+      </node>
+      <node id="2">
+        <label>Wire.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structpower__monitor__str" prot="public">power_monitor_str</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="setup_8h_1a7b3b25cba33b07c303f3060fe41887f6" prot="public" static="no">
+        <name>BLACK</name>
+        <initializer>0x0000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TFT black color. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="14" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="setup_8h_1a79d10e672abb49ad63eeaa8aaef57c38" prot="public" static="no">
+        <name>BLUE</name>
+        <initializer>0x001F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TFT blue color. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="20" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="setup_8h_1a8d23feea868a983c8c2b661e1e16972f" prot="public" static="no">
+        <name>RED</name>
+        <initializer>0xF800</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TFT red color. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="26" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="setup_8h_1acfbc006ea433ad708fdee3e82996e721" prot="public" static="no">
+        <name>GREEN</name>
+        <initializer>0x07E0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TFT green color. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="32" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="setup_8h_1ad243f93c16bc4c1d3e0a13b84421d760" prot="public" static="no">
+        <name>CYAN</name>
+        <initializer>0x07FF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TFT cyan color. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="38" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="setup_8h_1a6f699060902f800f12aaae150f3a708e" prot="public" static="no">
+        <name>MAGENTA</name>
+        <initializer>0xF81F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TFT magenta color. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="44" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="setup_8h_1abf681265909adf3d3e8116c93c0ba179" prot="public" static="no">
+        <name>YELLOW</name>
+        <initializer>0xFFE0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TFT yellow color. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="50" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="setup_8h_1a87b537f5fa5c109d3c05c13d6b18f382" prot="public" static="no">
+        <name>WHITE</name>
+        <initializer>0xFFFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TFT white color. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="56" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="setup_8h_1a42a8c4982cef9a6a4b0c4120e95f33da" prot="public" static="no">
+        <name>MINPRESSURE</name>
+        <initializer>200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TFT minimal pressure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="62" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="setup_8h_1a4a6e2948ffa5d35d9d934d7b875abd4c" prot="public" static="no">
+        <name>MAXPRESSURE</name>
+        <initializer>1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TFT maximum pressure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="68" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="setup_8h_1a328016c95889e9831b2606769b90a317" prot="public" static="no">
+        <name>XP</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pinout of X+. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="74" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="setup_8h_1aba9214664551147170071ccde26b1366" prot="public" static="no">
+        <name>XM</name>
+        <initializer>56</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pinout of X-. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="80" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="setup_8h_1ab7dd464b7c1c7ae1fe3b51487a226c80" prot="public" static="no">
+        <name>YP</name>
+        <initializer>55</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pinout of Y+. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="86" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="setup_8h_1a517c4f2440d1d36aa90f125d4b7e12f5" prot="public" static="no">
+        <name>YM</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pinout of Y-. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="92" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="setup_8h_1ac1339fa84c70a1e0606d8d3362c993ee" prot="public" static="no">
+        <name>INA219_ADDR</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>INA-219 I2C address. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="100" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="setup_8h_1a93f97e455a4335f7c2b6cff3716e2691" prot="public" static="no">
+        <name>SAMPLE_INTERVAL</name>
+        <initializer>50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>INA-219 sampling interval (in ms). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="106" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="setup_8h_1a969d1ca2eb94adccd6a1d087f1a6274f" prot="public" static="no">
+        <name>SHOW_INTERVAL</name>
+        <initializer>3000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LCD showing interval (in ms). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="112" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="setup_8h_1a7f2cca54a84385ee3fa3bb0d0f50f6c7" prot="public" static="no" mutable="no">
+        <type>Adafruit_INA219</type>
+        <definition>Adafruit_INA219 ina219_sensor</definition>
+        <argsstring></argsstring>
+        <name>ina219_sensor</name>
+        <initializer>= Adafruit_INA219(INA219_ADDR)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>INA219 object. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="132" column="17" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="setup_8h_1acd58c67baa829259d4e811afcdf38fa5" prot="public" static="no" mutable="no">
+        <type>MCUFRIEND_kbv</type>
+        <definition>MCUFRIEND_kbv tft</definition>
+        <argsstring></argsstring>
+        <name>tft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LCD object. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="133" column="15" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="setup_8h_1ad922b1d5df2224adfd042a0af89780af" prot="public" static="no" mutable="no">
+        <type><ref refid="structpower__monitor__str" kindref="compound">power_monitor_str</ref></type>
+        <definition>power_monitor_str sensor_values</definition>
+        <argsstring></argsstring>
+        <name>sensor_values</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sensor values struct. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="134" column="19" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="setup_8h_1a27876c9767e96db03f00ba95e94f0e91" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t tft_id</definition>
+        <argsstring></argsstring>
+        <name>tft_id</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LCD identification. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="135" column="10" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="setup_8h_1a2cbad8fe6116ab220360f22bd3229778" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t last_sample</definition>
+        <argsstring></argsstring>
+        <name>last_sample</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Last sample moment (in ms). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="136" column="10" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="setup_8h_1ab404284d5b50b2cd3d360e68f48233c5" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t last_show</definition>
+        <argsstring></argsstring>
+        <name>last_show</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Last show moment (in ms). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="137" column="10" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__SETUP_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SETUP_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Wire.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Adafruit_INA219.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;MCUFRIEND_kbv.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Adafruit_GFX.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;TouchScreen.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLACK<sp/><sp/><sp/>0x0000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLUE<sp/><sp/><sp/><sp/>0x001F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RED<sp/><sp/><sp/><sp/><sp/>0xF800</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GREEN<sp/><sp/><sp/>0x07E0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CYAN<sp/><sp/><sp/><sp/>0x07FF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAGENTA<sp/>0xF81F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>YELLOW<sp/><sp/>0xFFE0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WHITE<sp/><sp/><sp/>0xFFFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MINPRESSURE<sp/>200</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAXPRESSURE<sp/>1000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>XP<sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>XM<sp/>56</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>YP<sp/>55</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>YM<sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">//ID=0x9486</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INA219_ADDR<sp/><sp/><sp/>0x40</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SAMPLE_INTERVAL<sp/><sp/><sp/>50</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHOW_INTERVAL<sp/><sp/><sp/><sp/><sp/>3000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="structpower__monitor__str" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpower__monitor__str" kindref="compound">power_monitor_str</ref><sp/>{</highlight></codeline>
+<codeline lineno="118" refid="structpower__monitor__str_1a86988a65e0d3ece7990c032c159786d6" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="structpower__monitor__str_1a86988a65e0d3ece7990c032c159786d6" kindref="member">count</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119" refid="structpower__monitor__str_1a9adeef36f57c06a47ffd8c41372d5a29" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structpower__monitor__str_1a9adeef36f57c06a47ffd8c41372d5a29" kindref="member">actual_voltage</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120" refid="structpower__monitor__str_1abf4f6be248cd12be76191bb654a11cde" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structpower__monitor__str_1abf4f6be248cd12be76191bb654a11cde" kindref="member">min_voltage</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="121" refid="structpower__monitor__str_1a2dd9f57e9547ddd9a6ee5ddd1b56fcd5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structpower__monitor__str_1a2dd9f57e9547ddd9a6ee5ddd1b56fcd5" kindref="member">max_voltage</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="122" refid="structpower__monitor__str_1a8ebcae4ef366430a1016ea6d278cac9d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structpower__monitor__str_1a8ebcae4ef366430a1016ea6d278cac9d" kindref="member">avg_voltage</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="123" refid="structpower__monitor__str_1a73e165aaf2f12120a692f63c41aa52b4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structpower__monitor__str_1a73e165aaf2f12120a692f63c41aa52b4" kindref="member">sum_voltage</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="124" refid="structpower__monitor__str_1a2c13815f2823de3fbcacc5d32bb361b7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structpower__monitor__str_1a2c13815f2823de3fbcacc5d32bb361b7" kindref="member">actual_current</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125" refid="structpower__monitor__str_1ac6a693975aff43a81a829da5aa86a9cc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structpower__monitor__str_1ac6a693975aff43a81a829da5aa86a9cc" kindref="member">min_current</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="126" refid="structpower__monitor__str_1a854929d3dff33ea3ada6aa5ffa70dfa4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structpower__monitor__str_1a854929d3dff33ea3ada6aa5ffa70dfa4" kindref="member">max_current</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127" refid="structpower__monitor__str_1a445b32ad3b5e75056184e465c7e12d12" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structpower__monitor__str_1a445b32ad3b5e75056184e465c7e12d12" kindref="member">avg_current</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="128" refid="structpower__monitor__str_1aeab80d88e7454ca28f79bb503f8ab027" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structpower__monitor__str_1aeab80d88e7454ca28f79bb503f8ab027" kindref="member">sum_current</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Global<sp/>variables<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal">Adafruit_INA219<sp/>ina219_sensor<sp/>=<sp/>Adafruit_INA219(INA219_ADDR);<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">MCUFRIEND_kbv<sp/>tft;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><ref refid="structpower__monitor__str" kindref="compound">power_monitor_str</ref><sp/>sensor_values;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="135"><highlight class="normal">uint16_t<sp/>tft_id<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="136"><highlight class="normal">uint64_t<sp/>last_sample<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="137"><highlight class="normal">uint64_t<sp/>last_show<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h"/>
+  </compounddef>
+</doxygen>

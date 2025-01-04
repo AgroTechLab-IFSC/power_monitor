@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structpower__monitor__str" kind="struct" language="C++" prot="public">
+    <compoundname>power_monitor_str</compoundname>
+    <includes refid="setup_8h" local="no">setup.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpower__monitor__str_1a86988a65e0d3ece7990c032c159786d6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <qualifiedname>power_monitor_str::count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sampling count. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="118" column="12" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpower__monitor__str_1a9adeef36f57c06a47ffd8c41372d5a29" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float actual_voltage</definition>
+        <argsstring></argsstring>
+        <name>actual_voltage</name>
+        <qualifiedname>power_monitor_str::actual_voltage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sampled voltage (in V). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="119" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpower__monitor__str_1abf4f6be248cd12be76191bb654a11cde" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float min_voltage</definition>
+        <argsstring></argsstring>
+        <name>min_voltage</name>
+        <qualifiedname>power_monitor_str::min_voltage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Minimum sampled voltage (in V). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="120" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpower__monitor__str_1a2dd9f57e9547ddd9a6ee5ddd1b56fcd5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float max_voltage</definition>
+        <argsstring></argsstring>
+        <name>max_voltage</name>
+        <qualifiedname>power_monitor_str::max_voltage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum sampled voltage (in V). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="121" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpower__monitor__str_1a8ebcae4ef366430a1016ea6d278cac9d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float avg_voltage</definition>
+        <argsstring></argsstring>
+        <name>avg_voltage</name>
+        <qualifiedname>power_monitor_str::avg_voltage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Average sampled voltage (in V). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="122" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpower__monitor__str_1a73e165aaf2f12120a692f63c41aa52b4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sum_voltage</definition>
+        <argsstring></argsstring>
+        <name>sum_voltage</name>
+        <qualifiedname>power_monitor_str::sum_voltage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sum of all sampled voltage (in V). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="123" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpower__monitor__str_1a2c13815f2823de3fbcacc5d32bb361b7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float actual_current</definition>
+        <argsstring></argsstring>
+        <name>actual_current</name>
+        <qualifiedname>power_monitor_str::actual_current</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sampled current (in mA). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="124" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpower__monitor__str_1ac6a693975aff43a81a829da5aa86a9cc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float min_current</definition>
+        <argsstring></argsstring>
+        <name>min_current</name>
+        <qualifiedname>power_monitor_str::min_current</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Minimum sampled current (in mA). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="125" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpower__monitor__str_1a854929d3dff33ea3ada6aa5ffa70dfa4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float max_current</definition>
+        <argsstring></argsstring>
+        <name>max_current</name>
+        <qualifiedname>power_monitor_str::max_current</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum sampled current (in mA). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="126" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpower__monitor__str_1a445b32ad3b5e75056184e465c7e12d12" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float avg_current</definition>
+        <argsstring></argsstring>
+        <name>avg_current</name>
+        <qualifiedname>power_monitor_str::avg_current</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Average sampled current (in mA). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="127" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpower__monitor__str_1aeab80d88e7454ca28f79bb503f8ab027" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sum_current</definition>
+        <argsstring></argsstring>
+        <name>sum_current</name>
+        <qualifiedname>power_monitor_str::sum_current</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sum of all sampled current (in mA). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="128" column="9" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct used to store INA-219 sensor values. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/AgroTechLab/Tools/power_monitor/include/setup.h" line="117" column="1" bodyfile="C:/AgroTechLab/Tools/power_monitor/include/setup.h" bodystart="117" bodyend="129"/>
+    <listofallmembers>
+      <member refid="structpower__monitor__str_1a2c13815f2823de3fbcacc5d32bb361b7" prot="public" virt="non-virtual"><scope>power_monitor_str</scope><name>actual_current</name></member>
+      <member refid="structpower__monitor__str_1a9adeef36f57c06a47ffd8c41372d5a29" prot="public" virt="non-virtual"><scope>power_monitor_str</scope><name>actual_voltage</name></member>
+      <member refid="structpower__monitor__str_1a445b32ad3b5e75056184e465c7e12d12" prot="public" virt="non-virtual"><scope>power_monitor_str</scope><name>avg_current</name></member>
+      <member refid="structpower__monitor__str_1a8ebcae4ef366430a1016ea6d278cac9d" prot="public" virt="non-virtual"><scope>power_monitor_str</scope><name>avg_voltage</name></member>
+      <member refid="structpower__monitor__str_1a86988a65e0d3ece7990c032c159786d6" prot="public" virt="non-virtual"><scope>power_monitor_str</scope><name>count</name></member>
+      <member refid="structpower__monitor__str_1a854929d3dff33ea3ada6aa5ffa70dfa4" prot="public" virt="non-virtual"><scope>power_monitor_str</scope><name>max_current</name></member>
+      <member refid="structpower__monitor__str_1a2dd9f57e9547ddd9a6ee5ddd1b56fcd5" prot="public" virt="non-virtual"><scope>power_monitor_str</scope><name>max_voltage</name></member>
+      <member refid="structpower__monitor__str_1ac6a693975aff43a81a829da5aa86a9cc" prot="public" virt="non-virtual"><scope>power_monitor_str</scope><name>min_current</name></member>
+      <member refid="structpower__monitor__str_1abf4f6be248cd12be76191bb654a11cde" prot="public" virt="non-virtual"><scope>power_monitor_str</scope><name>min_voltage</name></member>
+      <member refid="structpower__monitor__str_1aeab80d88e7454ca28f79bb503f8ab027" prot="public" virt="non-virtual"><scope>power_monitor_str</scope><name>sum_current</name></member>
+      <member refid="structpower__monitor__str_1a73e165aaf2f12120a692f63c41aa52b4" prot="public" virt="non-virtual"><scope>power_monitor_str</scope><name>sum_voltage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

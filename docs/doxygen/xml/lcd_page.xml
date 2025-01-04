@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="lcd_page" kind="page">
+    <compoundname>lcd_page</compoundname>
+    <title>3,5&apos;&apos; TFT LCD</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The 3,5&apos;&apos; TFT LCD shield is a display with 262.000 colours, 480x320 pixels of resolution and touchscreen.</para>
+<para>Key features are listed below:<itemizedlist>
+<listitem><para>Supply voltage 3.3V ~ 5V;</para>
+</listitem><listitem><para>480x320 resolution;</para>
+</listitem><listitem><para>262.000 colours;</para>
+</listitem><listitem><para>TFT LCD (<emphasis>Thin Film Transistor Liquid Crystal Display</emphasis>);</para>
+</listitem><listitem><para>Resistive touchscreen;</para>
+</listitem><listitem><para>LED backlight;</para>
+</listitem><listitem><para>With SD card slot;</para>
+</listitem><listitem><para>Arduino and STM32 compatible;</para>
+</listitem></itemizedlist>
+</para>
+<para><image type="html" name="lcd1.jpg" inline="yes">LCD schematic connection</image>
+ <image type="latex" name="lcd1.jpg" inline="yes">LCD schematic connection</image>
+ <image type="rtf" name="lcd1.jpg" inline="yes">LCD schematic connection</image>
+ <image type="docbook" name="lcd1.jpg" inline="yes">LCD schematic connection</image>
+ <image type="xml" name="lcd1.jpg" inline="yes">LCD schematic connection</image>
+ <image type="html" name="lcd2.jpg" inline="yes">LCD schematic connection</image>
+ <image type="latex" name="lcd2.jpg" inline="yes">LCD schematic connection</image>
+ <image type="rtf" name="lcd2.jpg" inline="yes">LCD schematic connection</image>
+ <image type="docbook" name="lcd2.jpg" inline="yes">LCD schematic connection</image>
+ <image type="xml" name="lcd2.jpg" inline="yes">LCD schematic connection</image>
+ </para>
+    </detaileddescription>
+    <location file="C:/AgroTechLab/Tools/power_monitor/src/main.cpp"/>
+  </compounddef>
+</doxygen>

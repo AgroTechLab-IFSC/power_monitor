@@ -1,18 +1,3 @@
-/**
- * @file setup.h
- * @author Robson Costa (robson.costa@ifsc.edu.br)
- * @brief System setup parameters library.
- * @version 1.3.0
- * @since 30/10/2020 
- * @date 02/01/2025
- * 
- * @copyright Copyright (c) since 2020 - AgroTechLab. \n
- * Licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Unported License (the <em>"License"</em>). You may not
- * use this file except in compliance with the License. You may obtain a copy of the License <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode" target="_blank">here</a>.
- * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an <em>"as is" basis, 
- * without warranties or  conditions of any kind</em>, either express or implied. See the License for the specific language governing permissions 
- * and limitations under the License.
- */
 #ifndef __SETUP_H__
 #define __SETUP_H__
 
