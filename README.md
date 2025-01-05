@@ -27,7 +27,7 @@ This values are updated at each 3 seconds on LCD interface. It provides the foll
 * Minimal current (in mA);
 * Maximum current (in mA);
 
-More detail can be found at <a href="https://agrotechlab-ifsc.github.io/power_monitor">Power Monitor Documentation page</a>.
+More details can be found on the <a href="https://agrotechlab-ifsc.github.io/power_monitor">Power Monitor Documentation page</a>.
 
 ![Power Monitor display](./docs/figs/powermonitor_display.jpg "Power Monitor display")
 
